@@ -1,0 +1,184 @@
+{
+  "bench_press": {
+    "shoulders_not_retracted": {
+      "affected_joints": ["left_shoulder", "right_shoulder"],
+      "transformation": "translate",
+      "direction": "forward",
+      "magnitude": [0.05, 0.1]
+    },
+    "elbows_flaring_out_too_much": {
+      "affected_joints": ["left_elbow", "right_elbow"],
+      "transformation": "rotate",
+      "axis": "z",
+      "angle_range": [15, 30]
+    },
+    "bar_path_not_straight": {
+      "affected_joints": ["left_wrist", "right_wrist"],
+      "transformation": "vertical_wave",
+      "frequency": [0.5, 1.5],
+      "amplitude": [0.05, 0.1]
+    },
+    "arching_lower_back": {
+      "affected_joints": ["left_hip", "right_hip"],
+      "transformation": "translate",
+      "direction": "downward",
+      "magnitude": [0.1, 0.15]
+    },
+    "uneven_pressing": {
+      "affected_joints": ["left_shoulder", "right_shoulder"],
+      "transformation": "asymmetric_translate",
+      "left_magnitude": [0.05, 0.1],
+      "right_magnitude": [-0.05, -0.1]
+    }
+  },
+
+  "push_ups": {
+    "elbows_flaring_excessively": {
+      "affected_joints": ["left_elbow", "right_elbow"],
+      "transformation": "rotate",
+      "axis": "z",
+      "angle_range": [25, 35]
+    },
+    "hips_sagging_downward": {
+      "affected_joints": ["left_hip", "right_hip"],
+      "transformation": "translate",
+      "direction": "downward",
+      "magnitude": [0.1, 0.2]
+    },
+    "neck_straining_forward": {
+      "affected_joints": ["nose"],
+      "transformation": "translate",
+      "direction": "forward",
+      "magnitude": [0.15, 0.25]
+    },
+    "uneven_push": {
+      "affected_joints": ["left_wrist", "right_wrist"],
+      "transformation": "asymmetric_translate",
+      "left_magnitude": [0.05, 0.1],
+      "right_magnitude": [-0.05, -0.1]
+    }
+  },
+
+  "overhead_shoulder_press": {
+    "arching_lower_back": {
+      "affected_joints": ["left_hip", "right_hip"],
+      "transformation": "translate",
+      "direction": "forward",
+      "magnitude": [0.1, 0.15]
+    },
+    "bar_path_forward": {
+      "affected_joints": ["left_wrist", "right_wrist"],
+      "transformation": "translate",
+      "direction": "forward",
+      "magnitude": [0.05, 0.1]
+    },
+    "elbows_flaring": {
+      "affected_joints": ["left_elbow", "right_elbow"],
+      "transformation": "rotate",
+      "axis": "z",
+      "angle_range": [15, 25]
+    },
+    "knees_bending": {
+      "affected_joints": ["left_knee", "right_knee"],
+      "transformation": "rotate",
+      "axis": "x",
+      "angle_range": [-10, -15]
+    }
+  },
+
+  "deadlifts": {
+    "rounding_lower_back": {
+      "affected_joints": ["left_hip", "right_hip"],
+      "transformation": "translate",
+      "direction": "backward",
+      "magnitude": [0.1, 0.15]
+    },
+    "knees_caving": {
+      "affected_joints": ["left_knee", "right_knee"],
+      "transformation": "rotate",
+      "axis": "z",
+      "angle_range": [-10, -20]
+    },
+    "bar_too_far": {
+      "affected_joints": ["left_ankle", "right_ankle"],
+      "transformation": "translate",
+      "direction": "forward",
+      "magnitude": [0.05, 0.1]
+    },
+    "hips_rising_first": {
+      "affected_joints": ["left_hip", "right_hip"],
+      "transformation": "temporal_shift",
+      "shift_frames": [5, 10],
+      "magnitude": [0.1, 0.2]
+    }
+  },
+
+  "squats": {
+    "knees_caving_inward": {
+      "affected_joints": ["left_knee", "right_knee"],
+      "transformation": "rotate",
+      "axis": "z",
+      "angle_range": [-15, -25]
+    },
+    "heels_lifting": {
+      "affected_joints": ["left_ankle", "right_ankle"],
+      "transformation": "translate",
+      "direction": "upward",
+      "magnitude": [0.03, 0.07]
+    },
+    "leaning_forward": {
+      "affected_joints": ["left_shoulder", "right_shoulder"],
+      "transformation": "translate",
+      "direction": "forward",
+      "magnitude": [0.1, 0.15]
+    },
+    "partial_reps": {
+      "affected_joints": ["left_knee", "right_knee"],
+      "transformation": "limit_range",
+      "min_angle": 90,
+      "max_angle": 120
+    }
+  },
+
+  "pull_ups": {
+    "shrugging_shoulders": {
+      "affected_joints": ["left_shoulder", "right_shoulder"],
+      "transformation": "translate",
+      "direction": "upward",
+      "magnitude": [0.05, 0.1]
+    },
+    "elbows_flaring": {
+      "affected_joints": ["left_elbow", "right_elbow"],
+      "transformation": "rotate",
+      "axis": "z",
+      "angle_range": [15, 25]
+    },
+    "half_reps": {
+      "affected_joints": ["left_elbow", "right_elbow"],
+      "transformation": "limit_range",
+      "min_angle": 90,
+      "max_angle": 120
+    }
+  },
+
+  "leg_extension": {
+    "locking_knees": {
+      "affected_joints": ["left_knee", "right_knee"],
+      "transformation": "rotate",
+      "axis": "x",
+      "angle_range": [5, 10]
+    },
+    "hip_lift": {
+      "affected_joints": ["left_hip", "right_hip"],
+      "transformation": "translate",
+      "direction": "upward",
+      "magnitude": [0.05, 0.1]
+    },
+    "short_range": {
+      "affected_joints": ["left_knee", "right_knee"],
+      "transformation": "limit_range",
+      "min_angle": 30,
+      "max_angle": 60
+    }
+  }
+}
